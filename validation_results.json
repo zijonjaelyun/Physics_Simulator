@@ -1,0 +1,78 @@
+{
+  "python": "3.13.5",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "pandas": "2.2.3",
+    "plotly": "6.5.2",
+    "pytest": "9.0.2"
+  },
+  "checks": {
+    "mixed": {
+      "mass_error_mol": 1.1180834903756764e-19,
+      "relative_mass_error": 2.236166980751353e-15,
+      "charge_error_C": 3.1086244689504383e-15,
+      "circuit_error_V": 2.220446049250313e-16,
+      "minimum_surface_M": 0.061094673113629296,
+      "valid": true
+    },
+    "diffusion": {
+      "mass_error_mol": 4.326644294574966e-18,
+      "relative_mass_error": 8.653288589149934e-14,
+      "charge_error_C": 4.884981308350689e-15,
+      "circuit_error_V": 6.661338147750939e-16,
+      "minimum_surface_M": 0.026973288544880684,
+      "valid": true
+    }
+  },
+  "final": {
+    "mixed": {
+      "charge_C": 3.7537933858686463,
+      "terminal_V": 1.0375699712956492,
+      "surface_nernst_V": 1.0894484698604316,
+      "cu_surface_M": 0.061094673113629296
+    },
+    "diffusion": {
+      "charge_C": 3.728906701077856,
+      "terminal_V": 1.0275900070698498,
+      "surface_nernst_V": 1.0789695074233423,
+      "cu_surface_M": 0.026973288544880684
+    }
+  },
+  "convergence": [
+    {
+      "dt_s": 2.0,
+      "cells": 48,
+      "duration_s": 600.0,
+      "status": "duration",
+      "charge_C": 0.6254541602593281,
+      "terminal_V": 1.0404006591139492,
+      "surface_M": 0.059026099498189114
+    },
+    {
+      "dt_s": 1.0,
+      "cells": 48,
+      "duration_s": 600.0,
+      "status": "duration",
+      "charge_C": 0.6254549971886935,
+      "terminal_V": 1.0403995933405834,
+      "surface_M": 0.05902096266658127
+    },
+    {
+      "dt_s": 1.0,
+      "cells": 96,
+      "duration_s": 600.0,
+      "status": "duration",
+      "charge_C": 0.6254550577763778,
+      "terminal_V": 1.0403995891961695,
+      "surface_M": 0.05902094302149819
+    }
+  ],
+  "pytest": {
+    "passed": 47,
+    "skipped": 10,
+    "skipped_reason": "Streamlit package cannot be installed in the current offline environment"
+  },
+  "streamlit_server_tested": false,
+  "public_cloud_deployed": false
+}
