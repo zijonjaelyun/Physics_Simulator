@@ -1,0 +1,17 @@
+{
+  "scope": "Actual Chromium HTML components; not Streamlit server",
+  "checks": [
+    "snapshot:same",
+    "snapshot:cu10",
+    "snapshot:zn10",
+    "snapshot:open",
+    "snapshot:temp",
+    "equation-sync",
+    "rest-zero-current",
+    "model-switch-at-same-time",
+    "play-pause-reset",
+    "slider-seek",
+    "mobile-no-horizontal-overflow"
+  ],
+  "js_errors": []
+}
